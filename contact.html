@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet"
+          href="style.css">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!---https://www.gehu.ac.in/content/dam/gehu/about/GEHU-logo.svg--->
+<body>
+    <section class=" sub-header">
+        <nav>
+            <img src="https://wweii.in/yahoo_site_admin/assets/images/logo.12151937_std.jpg"
+                 alt="LOGO">
+            <div class="nav-links"
+                 id="navLinks">
+                <i class="bi bi-x"
+                   onclick="hideMenu()"></i>
+
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="courses.html">COURSES</a>
+                    </li>
+                    <li>
+                        <a href="admission.html">ADMISSION</a>
+                    </li>
+                    <li>
+                        <a href="academic.html">ACADEMICS</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="bi bi-list"
+               onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+
+
+    <section class="blog">
+        <div class="comment-box">
+            <h3>Write your query or any Feedback</h3>
+            <form action="feedback.php"
+                  class="comment-form"
+                  method="post">
+                <input type="text"
+                       name="name"
+                       placeholder="Enter Name">
+                <input type="email"
+                       name="email"
+                       placeholder="Enter Email">
+                <textarea rows="5"
+                          name="fb"
+                          placeholder="Your Comment"></textarea>
+                <button type="submit"
+                        id="que"
+                        class="web red-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!------------Map---------->
+
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.8933154227734!2d77.99265351512038!3d30.26862078180141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b9451ae8dfd%3A0xf39c46d34a152faa!2sGraphic%20Era%20(Deemed%20to%20be%20University)!5e0!3m2!1sen!2sin!4v1644065924097!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="bi bi-geo-alt"></i>
+                    <span>
+                        <h5>566/6, Bell Road, Society Area</h5>
+                        <p> Clement Town, Dehradun, Uttarakhand 248002</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="bi bi-telephone"></i>
+                    <span>
+                        <h5>1800 270 1280</h5>
+                        <p>Monday to Saturday, 9AM to 5PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="bi bi-shop"></i>
+                    <span>
+                        <h5>7X9V+CW Dehradun, Uttarakhand</h5>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!----------footer---------->
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are here to help you. <br> Just feel free to ask anything.</p>
+
+        <div class="icons">
+            <nav>
+                <a href="https://www.facebook.com/geuofficial/"
+                   target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://twitter.com/GEU_Official"
+                   target="_blank">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/school/graphic-era-official"
+                   target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/GraphicEraOfficial"
+                   target="_blank">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/geuofficial/"
+                   target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="tour">
+            <a href="https://www.geu.ac.in/content/geu/en/about/360-tour.html">
+                <img class="img-responsive"
+                     src="https://www.geu.ac.in/content/dam/geu/virtualTour.PNG
+        "
+                     alt="360 view"> </a>
+        </div>
+        <p>Made with <i class="bi bi-heart"></i> By Aditi Sharma</p>
+    </section>
+
+
+
+
+    <!--Java for toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
